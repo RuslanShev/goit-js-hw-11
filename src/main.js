@@ -25,7 +25,7 @@ form.addEventListener('submit', async e => {
 
   try {
     const data = await getImagesByQuery(query);
-    await new Promise(resolve => setTimeout(resolve, 2000));
+
     if (data.hits.length === 0) {
       iziToast.error({
         message:
